@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{
+        "title":"Главная"
+    })
+<body class="body">
+    @@include('html/header.html',{})
+  
+    <main class="content">
+      <form class="content__form form-search" action="" >
+        <input class="form-search__input" type="text" placeholder="Поиск" >
+        <button class="form-search__btn" tipe="submit"></button>
+      </form>
+      <section class="content__home">
+        <div class="column__feed">
+          <h1 class="feed__title title">Лента</h1>
+          <article class="feed__article article-feed">
+            <img class="article-feed__img" src="img/article/image-1.jpg" alt="image" >
+            <div class="article-feed__descr">
+              <div class="article-feed__descr-text">ПОПУЛЯРНЫЕ</div>
+              <time class="article-feed__descr-time" datetime="2022-06-07 10:56">07 июня 2022 • 10:56</time>
+            </div>
+
+            <div class="article-feed__content show">
+              <div class="article-feed__header">
+                <h2 class="article-feed__header-title">Профессия интернет-маркетолог</h2>
+                <img class="article-feed__header-arrow" src="img/article/arrow.png" alt="arrow">
+              </div>
+              
+              <div class="article-feed__text">
+                <p class="article-feed__text-p">В статье собраны только факты, основанные на реалиях современного бизнеса и профессии
+                  «Интернет-маркетолог». Возможно,
+                  сегодня Вы скажете где-то внутри себя «Да, это оно», а может, убедитесь раз и навсегда, что данное направление не
+                  для
+                  Вас…
+                </p>
+                <p class="article-feed__text-p">
+                  Каждый бизнес должен быть представлен в социальных сетях – это не только:
+                </p>
+                <ul class="article-feed__text-ul">
+                  <li class="article-feed__text-li">способ поддерживать коммуникацию с потенциальными и реальными клиентами;</li>
+                  <li class="article-feed__text-li">формировать положительный имидж компании;</li>
+                  <li class="article-feed__text-li">предоставлять актуальную информацию о своих товарах и услугах</li>
+                </ul>
+                <a class="article-feed__more" href="article.html">
+                  <span class="article-feed__more-link">Подробнее</span>
+                  <img class="article-feed__more-arrow" src="img/article/arrow-right.png" alt="arrow">
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="feed__article article-feed ">
+            <img class="article-feed__img" src="img/article/image-2.jpg" alt="image">
+            <div class="article-feed__descr">
+              <div class="article-feed__descr-text">Cтатьи</div>
+              <time class="article-feed__descr-time" datetime="2022-06-07 10:56">11 мая 2022 • 13:54</time>
+            </div>
+            <div class="article-feed__content show">
+              <div class="article-feed__header">
+                <h2 class="article-feed__header-title">Самостоятельное продвижение в социальных сетях</h2>
+                <img class="article-feed__header-arrow" src="img/article/arrow.png" alt="arrow">
+              </div>
+
+              <div class="article-feed__text">
+                <p class="article-feed__text-p">В статье собраны только факты, основанные на реалиях современного бизнеса и
+                  профессии «Интернет-маркетолог». Возможно,
+                  сегодня Вы скажете где-то внутри себя «Да, это оно», а может, убедитесь раз и навсегда, что данное направление не
+                  для
+                  Вас…
+                </p>
+                <p class="article-feed__text-p">
+                  Каждый бизнес должен быть представлен в социальных сетях – это не только:
+                </p>
+                <ul class="article-feed__text-ul">
+                  <li class="article-feed__text-li">способ поддерживать коммуникацию с потенциальными и реальными клиентами;</li>
+                  <li class="article-feed__text-li">формировать положительный имидж компании;</li>
+                  <li class="article-feed__text-li">предоставлять актуальную информацию о своих товарах и услугах</li>
+                </ul>
+                <a class="article-feed__more" href="#">
+                  <span class="article-feed__more-link">Подробнее</span>
+                  <img class="article-feed__more-arrow" src="img/article/arrow-right.png" alt="arrow">
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <a class="show-more" href="#">
+          <span class="show-more__link">Показать больше</span>
+          <img class="show-more__arrow" src="img/article/arrow-right.png" alt="arrow">
+        </a>
+
+        <div class="column__recommend">
+          <h1 class="recommend__title title">Рекомендации</h1>
+          <div class="recommend__card card-recommend">
+            <div class="card-recommend__title">Индекс потребительской активности</div>
+            <div class="card-recommend__descr">
+              <div class="card-recommend__descr-index">72</div>
+              <div class="card-recommend__descr-text">базовые покупки, 15 июня 2022</div>
+            </div>
+            <div class="card-recommend__img">
+              <img class="" src="img/recommend/schedule.png" alt="shedule">
+            </div>
+          </div>
+
+          <div class="recommend__card card-recommend">
+            <div class="card-recommend__title">Изменение потребительских расходов</div>
+            <div class="card-recommend__descr">
+              <div class="card-recommend__descr-index">7.2% г/г</div>
+              <div class="card-recommend__descr-text">по сравнению с такой же неделей прошлого года</div>
+            </div>
+            <img class="card-recommend__img" src="img/recommend/schedule-1.png" alt="shedule">
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

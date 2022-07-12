@@ -1,0 +1,7 @@
+Запуск задач:
+
+npm run dev --- запуск gulp в режиме разработчика
+npm run build --- запуск gulp в режиме продакшена
+npm run svgSprive --- конвертация иконок svg
+npm run zip --- сборка результат в архив ZIP 
+npm run deploy --- отправка файлов на FTP сервер

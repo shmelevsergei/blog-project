@@ -1,0 +1,122 @@
+
+
+.content-article {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 521px));
+  grid-auto-rows: repeat(2, minmax(0, calc(338px / 2))) auto;
+  column-gap: 20px;
+  margin-top: 42px;
+  
+  &__header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3D61CC;
+  }
+
+  &__time {
+    
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    color: #828282;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #1D204B;
+  }
+  &__img {
+    right: 0;
+    max-width: 503px;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    img {
+      max-width: 100%;
+      border-radius: 30px;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #4F4F4F;
+    p {
+      margin-top: 15px;
+    }
+    span {
+      font-weight: bold;
+    }
+    ul {
+      margin-top: 15px;
+    }
+    li {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    h2 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: #2583CA;
+    }
+  }
+
+  &__text-left {
+    grid-row: 2 /4 ;
+    grid-column: 1 / 2;
+  }
+
+    &__text-right {
+      grid-row: 2 / 4;
+      grid-column: 2 / 3;
+      margin-top: 125px;
+    }
+
+}
+.return-home {
+  display: none;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  
+  &__link {
+    display: inline-block;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #3D61CC;
+  }
+
+  &__arrow {
+    margin-top: 7px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    transform: rotate(180deg);
+
+  }
+}

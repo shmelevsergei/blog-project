@@ -1,0 +1,21 @@
+//Подключаем файл обнуления
+@import 'base/other/zeroing';
+
+// Импортируем шрифты
+@import 'fonts';
+
+//Импорт блоков
+@import 'blocks/baze';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/search';
+@import 'blocks/feed';
+@import 'blocks/recommend';
+@import 'blocks/article';
+
+@import 'blocks/media';
+
+
+
+
+//Дополнительные настройки проекта

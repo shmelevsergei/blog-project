@@ -1,0 +1,59 @@
+body {
+  display: grid;
+  grid-template-columns: minamx(0, 517px) minmax(0, (calc(738px + 305px + 20px)));
+  column-gap: 20px;
+  background: #F5F5F5;
+  padding-right: 10px;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #4F4F4F;
+}
+.content {
+  margin-left: 227px;
+}
+.content__home {
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, 305px);
+  gap: 20px;
+}
+
+.show {
+  .article-feed__header-arrow {
+    transform: rotate(180deg);
+  }
+
+  .article-feed__text {
+    display: none;
+  }
+}
+
+
+.menu-active {
+  .wrapper-header-menu {
+    height: 100%;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__burger {
+  display: block;
+  width: 19px;
+  height: 18px;
+  padding: 2px;
+  margin: 0;
+  cursor: pointer;
+  background-image: url('../img/menu-icon/close.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+}
